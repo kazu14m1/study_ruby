@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>結果</title>
+  </head>
+  <body>
+    <% if result == :draw %>
+      <h1>あいこ！</h1>
+    <% elsif result == :win %>
+      <h1>かち！</h1>
+    <% else %>
+      <h1>まけ！</h1>
+    <% end %>
+    <div>あなたの手：<%= h user_hand %></div>
+    <div>コンピュータの手：<%= h cpu_hand %></div>
+  </body>
+</html>
